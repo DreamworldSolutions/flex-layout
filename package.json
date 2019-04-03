@@ -1,0 +1,18 @@
+{
+  "name": "@dw/flex-layout",
+  "version": "1.0.2",
+  "description": "This component provides simple ways to use CSS flexible box layout, also known as flexbox.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.dream-world.in:dw/flex-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.1.0"
+  }
+}
