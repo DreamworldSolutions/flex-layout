@@ -1,0 +1,1 @@
+This component provides simple ways to use CSS flexible box layout, also known as flexbox. 
