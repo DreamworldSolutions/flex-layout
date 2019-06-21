@@ -1,6 +1,6 @@
 {
   "name": "@dw/flex-layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This component provides simple ways to use CSS flexible box layout, also known as flexbox.",
   "main": "index.js",
   "scripts": {
