@@ -22,12 +22,13 @@ npm install --save flex-layout
 
 ### In a lit element
 ```js
-import { flexLayout } from '@dw/flex-layout';
+import { flexLayout, alignment } from '@dw/flex-layout';
 
 class SampleElement extends PolymerElement {
     static get styles() {
     return [
       flexLayout,
+      alignment, 
       css`
       :host {
         display: block;
