@@ -1,5 +1,5 @@
 
-## &lt;flex-layout&gt;
+# flex-layout
 The flex-layout component provides simple ways to use
 [CSS flexible box layout](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes),
 also known as flexbox. Note that this is an old element, that was written
@@ -17,12 +17,12 @@ in every element that needs to use them.
 
 ### Installation
 ```
-npm install --save flex-layout
+npm install --save @dreamworld/flex-layout
 ```
 
 ### In a lit element
 ```js
-import { flexLayout, alignment } from '@dw/flex-layout';
+import { flexLayout, alignment } from '@dreamworld/flex-layout';
 
 class SampleElement extends PolymerElement {
     static get styles() {

@@ -1,18 +1,25 @@
 {
-  "name": "@dw/flex-layout",
-  "version": "1.0.5",
-  "description": "This component provides simple ways to use CSS flexible box layout, also known as flexbox.",
+  "name": "@dreamworld/flex-layout",
+  "version": "0.0.0-development",
+  "description": "Provides simple ways to use CSS flexible box layout, also known as flexbox with LitElement development.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.dream-world.in:dw/flex-layout.git"
+    "url": "git@github.com:DreamworldSolutions/flex-layout.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "lit-element": "^2.1.0"
+  },
+  "devDependencies": {
+    "semantic-release": "beta"
+  },
+  "publishConfig": {
+    "access": "public"
   }
+  
 }
