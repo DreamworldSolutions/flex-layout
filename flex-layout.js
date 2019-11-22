@@ -7,66 +7,57 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css } from 'lit-element';
-export const flexLayout = css`
+import { css, unsafeCSS } from 'lit-element';
+import {
+  displayFlex,
+  displayInlineFlex,
+  horizontal,
+  vertical,
+  wrap,
+  noWrap,
+  centerAligned,
+  centerJustified,
+  flexFactor,
+  flexFactorAuto,
+  flexFactorNone,
+
+} from './flex-layout-literals';
+
+export const flexLayout = unsafeCSS`
   .layout.horizontal,
   .layout.vertical {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    ${displayFlex}
   }
   .layout.inline {
-    display: -ms-inline-flexbox;
-    display: -webkit-inline-flex;
-    display: inline-flex;
+    ${displayInlineFlex}
   }
   .layout.horizontal {
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    ${horizontal}
   }
   .layout.vertical {
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    ${vertical}
   }
   .layout.wrap {
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+    ${wrap}
   }
   .layout.no-wrap {
-    -ms-flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    ${noWrap}
   }
   .layout.center,
   .layout.center-center {
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    ${centerAligned}
   }
   .layout.center-justified,
   .layout.center-center {
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    ${centerJustified}
   }
   .flex {
-    -ms-flex: 1 1 0.000000001px;
-    -webkit-flex: 1;
-    flex: 1;
-    -webkit-flex-basis: 0.000000001px;
-    flex-basis: 0.000000001px;
+    ${flexFactor}
   }
   .flex-auto {
-    -ms-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
+    ${flexFactorAuto}
   }
   .flex-none {
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
+    ${flexFactorNone}
   }
 `;

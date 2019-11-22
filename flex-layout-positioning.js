@@ -7,60 +7,60 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css } from 'lit-element';
-export const positioning = css`
+import { css, unsafeCSS } from 'lit-element';
+import {
+  displayBlock,
+  displayNone,
+  invisible,
+  relative,
+  fit,
+  fullbleed,
+  scroll,
+  fixed,
+  fixedTop,
+  fixedRight,
+  fixedBottom,
+  fixedLeft
+} from './flex-layout-positioning-literals';
+export const positioning = unsafeCSS`
   .block {
-    display: block;
+    ${displayBlock}
   }
   /* IE 10 support for HTML5 hidden attr */
   [hidden] {
-    display: none !important;
+    ${displayNone}
   }
   .invisible {
-    visibility: hidden !important;
+    ${invisible}
   }
   .relative {
-    position: relative;
+    ${relative}
   }
   .fit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    ${fit}
   }
   body.fullbleed {
-    margin: 0;
-    height: 100vh;
+    ${fullbleed}
   }
   .scroll {
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
+    ${scroll}
   }
   .fixed-bottom,
   .fixed-left,
   .fixed-right,
   .fixed-top {
-    position: fixed;
+    ${fixed}
   }
   .fixed-top {
-    top: 0;
-    left: 0;
-    right: 0;
+    ${fixedTop}
   }
   .fixed-right {
-    top: 0;
-    right: 0;
-    bottom: 0;
+    ${fixedRight}
   }
   .fixed-bottom {
-    right: 0;
-    bottom: 0;
-    left: 0;
+    ${fixedBottom}
   }
   .fixed-left {
-    top: 0;
-    bottom: 0;
-    left: 0;
+    ${fixedLeft}
   }
 `;
