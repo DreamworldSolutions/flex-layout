@@ -7,108 +7,86 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css } from 'lit-element';
+import { css, unsafeCSS } from 'lit-element';
+import {
+  startAligned,
+  centerAligned,
+  endAligned,
+  baseline,
+  startJustified,
+  centerJustified,
+  endJustified,
+  aroundJustified,
+  justified,
+  selfStart,
+  selfCenter,
+  selfEnd,
+  selfStretch,
+  selfBaseline,
+  startAlignedContent,
+  endAlignedContent,
+  centerAlignedContent,
+  betweenAlignedContent,
+  aroundAlignedContent
+} from './flex-layout-alignment-literals';
 export const alignment = css`
   .layout.start {
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    ${startAligned}
   }
   .layout.center,
   .layout.center-center {
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    ${centerAligned}
   }
   .layout.end {
-    -ms-flex-align: end;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
+    ${endAligned}
   }
   .layout.baseline {
-    -ms-flex-align: baseline;
-    -webkit-align-items: baseline;
-    align-items: baseline;
+    ${baseline}
   }
   .layout.start-justified {
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+    ${startJustified}
   }
   .layout.center-justified,
   .layout.center-center {
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    ${centerJustified}
   }
   .layout.end-justified {
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
+    ${endJustified}
   }
   .layout.around-justified {
-    -ms-flex-pack: distribute;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    ${aroundJustified}
   }
   .layout.justified {
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    ${justified}
   }
   .self-start {
-    -ms-align-self: flex-start;
-    -webkit-align-self: flex-start;
-    align-self: flex-start;
+    ${selfStart}
   }
   .self-center {
-    -ms-align-self: center;
-    -webkit-align-self: center;
-    align-self: center;
+    ${selfCenter}
   }
   .self-end {
-    -ms-align-self: flex-end;
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
+    ${selfEnd}
   }
   .self-stretch {
-    -ms-align-self: stretch;
-    -webkit-align-self: stretch;
-    align-self: stretch;
+    ${selfStretch}
   }
   .self-baseline {
-    -ms-align-self: baseline;
-    -webkit-align-self: baseline;
-    align-self: baseline;
+    ${selfBaseline}
   }
   .layout.start-aligned {
-    -ms-flex-line-pack: start;  /* IE10 */
-    -ms-align-content: flex-start;
-    -webkit-align-content: flex-start;
-    align-content: flex-start;
+    ${startAlignedContent}
   }
   .layout.end-aligned {
-    -ms-flex-line-pack: end;  /* IE10 */
-    -ms-align-content: flex-end;
-    -webkit-align-content: flex-end;
-    align-content: flex-end;
+    ${endAlignedContent}
   }
   .layout.center-aligned {
-    -ms-flex-line-pack: center;  /* IE10 */
-    -ms-align-content: center;
-    -webkit-align-content: center;
-    align-content: center;
+    ${centerAlignedContent}
   }
   .layout.between-aligned {
-    -ms-flex-line-pack: justify;  /* IE10 */
-    -ms-align-content: space-between;
-    -webkit-align-content: space-between;
-    align-content: space-between;
+    ${betweenAlignedContent}
   }
   .layout.around-aligned {
-    -ms-flex-line-pack: distribute;  /* IE10 */
-    -ms-align-content: space-around;
-    -webkit-align-content: space-around;
-    align-content: space-around;
+    ${aroundAlignedContent}
   }
 `;
