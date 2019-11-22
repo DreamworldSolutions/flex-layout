@@ -7,18 +7,15 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css } from 'lit-element';
-export const reverse = css`
+import { css, unsafeCSS } from 'lit-element';
+import { displayFlex, horizontalReverse } from './flex-layout-reverse-literals';
+export const reverse = unsafeCSS`
   .layout.horizontal-reverse,
   .layout.vertical-reverse {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    ${displayFlex}
   }
   .layout.horizontal-reverse {
-    -ms-flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    ${horizontalReverse}
   }
   .layout.vertical-reverse {
     -ms-flex-direction: column-reverse;
