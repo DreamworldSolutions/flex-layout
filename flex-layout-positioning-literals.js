@@ -1,22 +1,22 @@
-import { unsafeCSS } from 'lit-element';
+import { css } from 'lit-element';
 
-export const displayBlock = unsafeCSS`
+export const displayBlock = css`
   display: block;
 `;
 
-export const displayNone = unsafeCSS`
+export const displayNone = css`
   display: none !important;
 `;
 
-export const invisible = unsafeCSS`
+export const invisible = css`
   visibility: hidden !important;
 `;
 
-export const relative = unsafeCSS`
+export const relative = css`
   position: relative;
 `;
 
-export const fit = unsafeCSS`
+export const fit = css`
   position: absolute;
   top: 0;
   right: 0;
@@ -24,39 +24,39 @@ export const fit = unsafeCSS`
   left: 0;
 `;
 
-export const fullbleed = unsafeCSS`
+export const fullbleed = css`
   margin: 0;
   height: 100vh;
 `
 
-export const scroll = unsafeCSS`
+export const scroll = css`
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 `;
 
-export const fixed = unsafeCSS`
+export const fixed = css`
   position: fixed;
 `;
 
-export const fixedTop = unsafeCSS`
+export const fixedTop = css`
   top: 0;
   left: 0;
   right: 0;
 `;
 
-export const fixedRight = unsafeCSS`
+export const fixedRight = css`
   top: 0;
   right: 0;
   bottom: 0;
 `;
 
-export const fixedLeft = unsafeCSS`
+export const fixedLeft = css`
   top: 0;
   bottom: 0;
   left: 0;
 `;
 
-export const fixedBottom = unsafeCSS`
+export const fixedBottom = css`
   right: 0;
   bottom: 0;
   left: 0;

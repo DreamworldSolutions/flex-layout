@@ -8,59 +8,47 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 import { css } from 'lit-element';
-import {
-  displayBlock,
-  displayNone,
-  invisible,
-  relative,
-  fit,
-  fullbleed,
-  scroll,
-  fixed,
-  fixedTop,
-  fixedRight,
-  fixedBottom,
-  fixedLeft
-} from './flex-layout-positioning-literals';
+import * as literals from './flex-layout-positioning-literals';
+
 export const positioning = css`
   .block {
-    ${displayBlock}
+    ${literals.displayBlock}
   }
   /* IE 10 support for HTML5 hidden attr */
   [hidden] {
-    ${displayNone}
+    ${literals.displayNone}
   }
   .invisible {
-    ${invisible}
+    ${literals.invisible}
   }
   .relative {
-    ${relative}
+    ${literals.relative}
   }
   .fit {
-    ${fit}
+    ${literals.fit}
   }
   body.fullbleed {
-    ${fullbleed}
+    ${literals.fullbleed}
   }
   .scroll {
-    ${scroll}
+    ${literals.scroll}
   }
   .fixed-bottom,
   .fixed-left,
   .fixed-right,
   .fixed-top {
-    ${fixed}
+    ${literals.fixed}
   }
   .fixed-top {
-    ${fixedTop}
+    ${literals.fixedTop}
   }
   .fixed-right {
-    ${fixedRight}
+    ${literals.fixedRight}
   }
   .fixed-bottom {
-    ${fixedBottom}
+    ${literals.fixedBottom}
   }
   .fixed-left {
-    ${fixedLeft}
+    ${literals.fixedLeft}
   }
 `;

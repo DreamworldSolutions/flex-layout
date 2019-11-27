@@ -7,57 +7,44 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css, unsafeCSS } from 'lit-element';
-import {
-  displayFlex,
-  displayInlineFlex,
-  horizontal,
-  vertical,
-  wrap,
-  noWrap,
-  centerAligned,
-  centerJustified,
-  flexFactor,
-  flexFactorAuto,
-  flexFactorNone,
-
-} from './flex-layout-literals';
+import { css } from 'lit-element';
+import * as literals from './flex-layout-literals';
 
 export const flexLayout = css`
   .layout.horizontal,
   .layout.vertical {
-    ${displayFlex}
+    ${literals.displayFlex}
   }
   .layout.inline {
-    ${displayInlineFlex}
+    ${literals.displayInlineFlex}
   }
   .layout.horizontal {
-    ${horizontal}
+    ${literals.horizontal}
   }
   .layout.vertical {
-    ${vertical}
+    ${literals.vertical}
   }
   .layout.wrap {
-    ${wrap}
+    ${literals.wrap}
   }
   .layout.no-wrap {
-    ${noWrap}
+    ${literals.noWrap}
   }
   .layout.center,
   .layout.center-center {
-    ${centerAligned}
+    ${literals.centerAligned}
   }
   .layout.center-justified,
   .layout.center-center {
-    ${centerJustified}
+    ${literals.centerJustified}
   }
   .flex {
-    ${flexFactor}
+    ${literals.flexFactor}
   }
   .flex-auto {
-    ${flexFactorAuto}
+    ${literals.flexFactorAuto}
   }
   .flex-none {
-    ${flexFactorNone}
+    ${literals.flexFactorNone}
   }
 `;
