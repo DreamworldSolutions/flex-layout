@@ -8,24 +8,20 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 import { css } from 'lit-element';
-import {
-  displayFlex,
-  horizontalReverse,
-  verticalReverse,
-  wrapReverse
-} from './flex-layout-reverse-literals';
+import * as literals from './flex-layout-reverse-literals';
+
 export const reverse = css`
   .layout.horizontal-reverse,
   .layout.vertical-reverse {
-    ${displayFlex}
+    ${literals.displayFlex}
   }
   .layout.horizontal-reverse {
-    ${horizontalReverse}
+    ${literals.horizontalReverse}
   }
   .layout.vertical-reverse {
-    ${verticalReverse}
+    ${literals.verticalReverse}
   }
   .layout.wrap-reverse {
-    ${wrapReverse}
+    ${literals.wrapReverse}
   }
 `;

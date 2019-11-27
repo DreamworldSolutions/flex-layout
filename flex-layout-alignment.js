@@ -8,85 +8,66 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 import { css } from 'lit-element';
-import {
-  startAligned,
-  centerAligned,
-  endAligned,
-  baseline,
-  startJustified,
-  centerJustified,
-  endJustified,
-  aroundJustified,
-  justified,
-  selfStart,
-  selfCenter,
-  selfEnd,
-  selfStretch,
-  selfBaseline,
-  startAlignedContent,
-  endAlignedContent,
-  centerAlignedContent,
-  betweenAlignedContent,
-  aroundAlignedContent
-} from './flex-layout-alignment-literals';
+import * as literals from './flex-layout-alignment-literals';
+
 export const alignment = css`
   .layout.start {
-    ${startAligned}
+    ${literals.startAligned}
   }
   .layout.center,
   .layout.center-center {
-    ${centerAligned}
+    ${literals.centerAligned}
   }
   .layout.end {
-    ${endAligned}
+    ${literals.endAligned}
   }
   .layout.baseline {
-    ${baseline}
+    ${literals.baseline}
   }
   .layout.start-justified {
-    ${startJustified}
+    ${literals.startJustified}
   }
   .layout.center-justified,
   .layout.center-center {
-    ${centerJustified}
+    ${literals.centerJustified}
   }
   .layout.end-justified {
-    ${endJustified}
+    ${literals.endJustified}
   }
   .layout.around-justified {
-    ${aroundJustified}
+    ${literals.aroundJustified}
   }
   .layout.justified {
-    ${justified}
+    ${literals.justified}
   }
   .self-start {
-    ${selfStart}
+    ${literals.selfStart}
   }
   .self-center {
-    ${selfCenter}
+    ${literals.selfCenter}
   }
   .self-end {
-    ${selfEnd}
+    ${literals.selfEnd}
   }
   .self-stretch {
-    ${selfStretch}
+    ${literals.selfStretch}
   }
   .self-baseline {
-    ${selfBaseline}
+    ${literals.selfBaseline}
   }
   .layout.start-aligned {
-    ${startAlignedContent}
+    ${literals.startAlignedContent}
   }
   .layout.end-aligned {
-    ${endAlignedContent}
+    ${literals.endAlignedContent}
   }
   .layout.center-aligned {
-    ${centerAlignedContent}
+    ${literals.centerAlignedContent}
   }
   .layout.between-aligned {
-    ${betweenAlignedContent}
+    ${literals.betweenAlignedContent}
   }
   .layout.around-aligned {
-    ${aroundAlignedContent}
+    ${literals.aroundAlignedContent}
   }
 `;
