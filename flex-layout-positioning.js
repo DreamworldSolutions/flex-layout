@@ -8,59 +8,47 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 import { css } from 'lit-element';
+import * as literals from './flex-layout-positioning-literals';
+
 export const positioning = css`
   .block {
-    display: block;
+    ${literals.displayBlock}
   }
   /* IE 10 support for HTML5 hidden attr */
   [hidden] {
-    display: none !important;
+    ${literals.displayNone}
   }
   .invisible {
-    visibility: hidden !important;
+    ${literals.invisible}
   }
   .relative {
-    position: relative;
+    ${literals.relative}
   }
   .fit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    ${literals.fit}
   }
   body.fullbleed {
-    margin: 0;
-    height: 100vh;
+    ${literals.fullbleed}
   }
   .scroll {
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
+    ${literals.scroll}
   }
   .fixed-bottom,
   .fixed-left,
   .fixed-right,
   .fixed-top {
-    position: fixed;
+    ${literals.fixed}
   }
   .fixed-top {
-    top: 0;
-    left: 0;
-    right: 0;
+    ${literals.fixedTop}
   }
   .fixed-right {
-    top: 0;
-    right: 0;
-    bottom: 0;
+    ${literals.fixedRight}
   }
   .fixed-bottom {
-    right: 0;
-    bottom: 0;
-    left: 0;
+    ${literals.fixedBottom}
   }
   .fixed-left {
-    top: 0;
-    bottom: 0;
-    left: 0;
+    ${literals.fixedLeft}
   }
 `;
