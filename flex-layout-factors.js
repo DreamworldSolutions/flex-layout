@@ -13,7 +13,8 @@ import * as literals from './flex-layout-factors-literals';
 export const factors = css`
   .flex,
   .flex-1 {
-    ${literals.flexFactor}
+    flex: 1;
+    flex-basis: 0.000000001px;
   }
   .flex-2 {
     ${literals.flex2}

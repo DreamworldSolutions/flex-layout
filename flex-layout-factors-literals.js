@@ -1,10 +1,5 @@
 import { css } from 'lit-element';
 
-export const flexFactor = css`
-  flex: 1;
-  flex-basis: 0.000000001px;
-`;
-
 export const flex2 = css`
   flex: 2;
 `;

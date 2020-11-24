@@ -32,11 +32,6 @@ export const centerJustified = css`
   justify-content: center;
 `;
 
-export const flexFactor = css`
-  flex: 1;
-  flex-basis: 0.000000001px;
-`;
-
 export const flexFactorAuto = css`
   flex: 1 1 auto;
 `;

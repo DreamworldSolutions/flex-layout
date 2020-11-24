@@ -39,7 +39,8 @@ export const flexLayout = css`
     ${literals.centerJustified}
   }
   .flex {
-    ${literals.flexFactor}
+    flex: 1;
+    flex-basis: 0.000000001px;
   }
   .flex-auto {
     ${literals.flexFactorAuto}
