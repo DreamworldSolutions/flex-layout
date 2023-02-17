@@ -7,8 +7,8 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css } from 'lit-element';
-import * as literals from './flex-layout-alignment-literals';
+import { css } from '@dreamworld/pwa-helpers/lit.js';
+import * as literals from './flex-layout-alignment-literals.js';
 
 export const alignment = css`
   .layout.start {

@@ -7,8 +7,8 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-import { css } from 'lit-element';
-import * as literals from './flex-layout-factors-literals';
+import { css } from '@dreamworld/pwa-helpers/lit.js';
+import * as literals from './flex-layout-factors-literals.js';
 
 export const factors = css`
   .flex,

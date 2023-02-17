@@ -1,15 +1,15 @@
-export { flexLayout } from './flex-layout';
-export { alignment } from './flex-layout-alignment';
-export { factors } from './flex-layout-factors';
-export { positioning } from './flex-layout-positioning';
-export { reverse } from './flex-layout-reverse';
+export { flexLayout } from './flex-layout.js';
+export { alignment } from './flex-layout-alignment.js';
+export { factors } from './flex-layout-factors.js';
+export { positioning } from './flex-layout-positioning.js';
+export { reverse } from './flex-layout-reverse.js';
 
 
-import * as flexLayoutLiterals from './flex-layout-literals';
-import * as flexLayoutAlignmentLiterals from './flex-layout-alignment-literals';
-import * as flexLayoutFactorsLiterals from './flex-layout-factors-literals';
-import * as flexLayoutPositioningLiterals from './flex-layout-positioning-literals';
-import * as flexLayoutReverseLiterals from './flex-layout-reverse-literals';
+import * as flexLayoutLiterals from './flex-layout-literals.js';
+import * as flexLayoutAlignmentLiterals from './flex-layout-alignment-literals.js';
+import * as flexLayoutFactorsLiterals from './flex-layout-factors-literals.js';
+import * as flexLayoutPositioningLiterals from './flex-layout-positioning-literals.js';
+import * as flexLayoutReverseLiterals from './flex-layout-reverse-literals.js';
 
 
 export let flexLayoutMixin = flexLayoutLiterals;
