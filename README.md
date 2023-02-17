@@ -2,12 +2,7 @@
 # flex-layout
 The flex-layout component provides simple ways to use
 [CSS flexible box layout](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes),
-also known as flexbox. Note that this is an old element, that was written
-before all modern browsers had non-prefixed flex styles. As such, nowadays you
-don't really need to use this element anymore, and can use CSS flex styles
-directly in your code.
-
-This component provides two different ways to use flexbox:
+also known as flexbox. use CSS flex styles directly in your code.
 
 The layout class stylesheet provides a simple set of class-based flexbox rules, that
 let you specify layout properties directly in markup. You must include this file
@@ -22,13 +17,14 @@ npm install --save @dreamworld/flex-layout
 
 ### In a lit element
 ```js
+import { LitElement } from '@dreamworld/pwa-helpers/lit.js';
 import { flexLayout, alignment } from '@dreamworld/flex-layout';
 
-class SampleElement extends PolymerElement {
+class SampleElement extends LitElement {
     static get styles() {
     return [
       flexLayout,
-      alignment, 
+      alignment,
       css`
       :host {
         display: block;
