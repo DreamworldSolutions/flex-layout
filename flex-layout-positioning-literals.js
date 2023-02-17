@@ -1,4 +1,4 @@
-import { css } from 'lit-element';
+import { css } from '@dreamworld/pwa-helpers/lit.js';
 
 export const displayBlock = css`
   display: block;
@@ -30,7 +30,6 @@ export const fullbleed = css`
 `
 
 export const scroll = css`
-  -webkit-overflow-scrolling: touch;
   overflow: auto;
 `;
 

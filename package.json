@@ -3,19 +3,22 @@
   "version": "0.0.0-development",
   "description": "Provides simple ways to use CSS flexible box layout, also known as flexbox with LitElement development.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
+    "start": "wds --node-resolve --app-index demo/index.html --open --watch",
     "type": "git",
     "url": "git@github.com:DreamworldSolutions/flex-layout.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lit-element": "^2.1.0"
+    "@dreamworld/pwa-helpers": "^1.14.3"
   },
   "devDependencies": {
+    "@web/dev-server": "^0.1.35",
     "semantic-release": "17.0.8"
   },
   "publishConfig": {
