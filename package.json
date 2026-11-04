@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dreamworld/pwa-helpers": "^1.14.3"
+    "@dreamworld/pwa-helpers": "^3.0.2"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.35",
